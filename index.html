@@ -3,14 +3,39 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZA ID LH — Developer</title>
-  <meta name="description" content="Building automation pipelines, web scrapers & Islamic apps. Python • Cloudflare • React"/>
-  <meta property="og:title" content="ZA ID LH — Developer"/>
-  <meta property="og:description" content="Automation, web scraping & Islamic tech."/>
+  <title>ZA ID LH — Developer & Automation Engineer</title>
+  <meta name="description" content="Building automation pipelines, web scrapers & Islamic apps. Python • Cloudflare Workers • React • ffmpeg. End-to-end engineering for production systems."/>
+  <meta name="keywords" content="automation, web scraping, pipeline, cloudflare workers, python, react, ffmpeg, video processing, islamic tech, developer, engineer"/>
+  <meta name="author" content="ZA ID LH"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://zaidlh.github.io"/>
+  
+  <!-- Open Graph / Social -->
+  <meta property="og:title" content="ZA ID LH — Automation Engineer"/>
+  <meta property="og:description" content="Building automation pipelines, web scrapers & Islamic tech. End-to-end engineering for production systems."/>
   <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://zaidlh.github.io"/>
+  <meta property="og:site_name" content="ZA ID LH Portfolio"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:image" content="https://zaidlh.github.io/og-image.png"/>
+  
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%2300e5ff'%3E%3E_%3C/text%3E%3C/svg%3E"/>
+  <meta name="twitter:site" content="@zaidlh"/>
+  <meta name="twitter:creator" content="@zaidlh"/>
+  <meta name="twitter:title" content="ZA ID LH — Automation Engineer"/>
+  <meta name="twitter:description" content="Building automation pipelines, web scrapers & Islamic tech."/>
+  <meta name="twitter:image" content="https://zaidlh.github.io/og-image.png"/>
+  
+  <!-- Theme Color -->
+  <meta name="theme-color" content="#00e5ff"/>
+  <meta name="msapplication-TileColor" content="#070b0f"/>
+  
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%2300e5ff'%3E%3E_%3C/text%3E%3C/svg%3E"/>
+  <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90' fill='%2300e5ff'%3E%3E_%3C/text%3E%3C/svg%3E"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet">
   
   <style>
@@ -1161,7 +1186,10 @@
     @media (max-width: 768px) {
       nav { padding: 16px 20px; }
       #hero { padding: 100px 20px 60px; }
+      #hero > div:first-of-type { flex-direction: column !important; text-align: center; }
+      #hero img { width: 100px !important; height: 100px !important; margin: 0 auto; }
       section { padding: 60px 20px; }
+      #services { padding: 60px 20px !important; }
       footer { flex-direction: column; gap: 8px; padding: 28px 20px 80px; }
       .hero-cta { flex-direction: column; }
       .contact-links { flex-direction: column; align-items: center; }
@@ -1172,6 +1200,48 @@
       .back-to-top { display: none; }
     }
   </style>
+  
+  <!-- JSON-LD Structured Data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "ZA ID LH",
+    "url": "https://zaidlh.github.io",
+    "jobTitle": "Automation Engineer",
+    "description": "Building automation pipelines, web scrapers & Islamic apps. Python • Cloudflare Workers • React • ffmpeg.",
+    "knowsAbout": ["Python", "Cloudflare Workers", "React", "ffmpeg", "Web Scraping", "Automation", "Video Processing"],
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "MA",
+      "addressLocality": "Morocco"
+    },
+    "sameAs": [
+      "https://github.com/zaidlh",
+      "https://twitter.com/zaidlh"
+    ],
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    }
+  }
+  </script>
+  
+  <!-- Organization Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ZA ID LH Portfolio",
+    "url": "https://zaidlh.github.io",
+    "description": "Automation pipelines, web scrapers & Islamic tech portfolio",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://zaidlh.github.io/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
 
@@ -1261,6 +1331,7 @@
   <div class="nav-logo">ZA ID<span>LH</span></div>
   <ul class="nav-links">
     <li><a href="#about">about</a></li>
+    <li><a href="#services">services</a></li>
     <li><a href="#projects">projects</a></li>
     <li><a href="#stack">stack</a></li>
     <li><a href="#contact">contact</a></li>
@@ -1275,6 +1346,7 @@
 <!-- Mobile Menu -->
 <div class="mobile-menu" id="mobileMenu">
   <a href="#about" onclick="closeMenu()">about</a>
+  <a href="#services" onclick="closeMenu()">services</a>
   <a href="#projects" onclick="closeMenu()">projects</a>
   <a href="#stack" onclick="closeMenu()">stack</a>
   <a href="#contact" onclick="closeMenu()">contact</a>
@@ -1287,15 +1359,20 @@
   <div class="hero-glow"></div>
 
   <p class="prompt" id="bootPrompt">initializing...</p>
-  <h1 class="hero-name" id="heroName">ZA ID<br><span class="accent">LH</span></h1>
-  <p class="hero-role">
-    Building automation pipelines, web scrapers &amp; Islamic apps.<br>
-    <span class="tag">Python</span>
-    <span class="tag">Cloudflare Workers</span>
-    <span class="tag">React</span>
-    <span class="tag">Google Colab</span>
-    <span class="tag">ffmpeg</span>
-  </p>
+  <div style="display:flex;align-items:center;gap:24px;flex-wrap:wrap;">
+    <img src="https://i.imgur.com/B7gpsYT_d.webp" alt="ZA ID LH" style="width:120px;height:120px;border-radius:12px;border:2px solid var(--border);box-shadow:0 0 30px var(--accent-dim);" class="reveal"/>
+    <div>
+      <h1 class="hero-name" id="heroName" style="margin-bottom:8px;">ZA ID<br><span class="accent">LH</span></h1>
+      <p class="hero-role">
+        Building automation pipelines, web scrapers &amp; Islamic apps.<br>
+        <span class="tag">Python</span>
+        <span class="tag">Cloudflare Workers</span>
+        <span class="tag">React</span>
+        <span class="tag">Google Colab</span>
+        <span class="tag">ffmpeg</span>
+      </p>
+    </div>
+  </div>
   <div class="hero-cta">
     <a href="https://github.com/zaidlh" class="btn btn-primary" target="_blank" rel="noopener">
       <span>View GitHub</span>
@@ -1431,6 +1508,62 @@
       </div>
     </div>
     <div class="gh-graph-grid" id="ghGraph"></div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services" style="padding:80px 48px;max-width:1100px;margin:0 auto;">
+  <p class="section-label reveal">services</p>
+  <h2 class="reveal" style="margin-bottom:40px;">What I <span style="color:var(--accent);transition:color 0.3s;">build.</span></h2>
+  
+  <div class="status-grid" style="margin-bottom:0;">
+    <div class="status-card" style="text-align:left;">
+      <div class="status-top">
+        <span class="status-name" style="font-size:15px;">Automation Pipelines</span>
+      </div>
+      <div class="status-info" style="margin-top:8px;">End-to-end workflow automation that replaces manual tasks. APIs, cron jobs, distributed processing via Google Colab.</div>
+    </div>
+    <div class="status-card" style="text-align:left;">
+      <div class="status-top">
+        <span class="status-name" style="font-size:15px;">Video Processing</span>
+      </div>
+      <div class="status-info" style="margin-top:8px;">ffmpeg-based encoding, transcoding pipelines, YouTube downloads via yt-dlp, batch processing at scale.</div>
+    </div>
+    <div class="status-card" style="text-align:left;">
+      <div class="status-top">
+        <span class="status-name" style="font-size:15px;">Web Scraping</span>
+      </div>
+      <div class="status-info" style="margin-top:8px;">Anti-bot resistant scrapers, Cloudflare bypass, data extraction under constraints, scaling with rotation.</div>
+    </div>
+    <div class="status-card" style="text-align:left;">
+      <div class="status-top">
+        <span class="status-name" style="font-size:15px;">Islamic Tech</span>
+      </div>
+      <div class="status-info" style="margin-top:8px;">Faith-driven applications with practical impact — audio, video, content generation for Islamic content.</div>
+    </div>
+  </div>
+  
+  <p class="reveal" style="text-align:center;margin-top:32px;color:var(--muted);font-size:13px;">
+    Available for freelance projects and collaborations
+  </p>
+</section>
+
+<!-- Social Proof / Featured In -->
+<section style="padding:60px 48px;text-align:center;max-width:900px;margin:0 auto;">
+  <p class="reveal" style="font-size:11px;letter-spacing:0.2em;color:var(--dim);margin-bottom:24px;text-transform:uppercase;">// Recognition</p>
+  <div class="reveal" style="display:flex;justify-content:center;align-items:center;gap:40px;flex-wrap:wrap;opacity:0.6;">
+    <span style="font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      GitHub Contributor
+    </span>
+    <span style="font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      Cloudflare Developer
+    </span>
+    <span style="font-size:14px;color:var(--muted);display:flex;align-items:center;gap:8px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      5+ Years Building
+    </span>
   </div>
 </section>
 
@@ -1646,6 +1779,16 @@
       <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
       GitHub Actions
     </button>
+  </div>
+  
+  <!-- Work Philosophy -->
+  <div class="reveal" style="margin-top:40px;padding:24px;background:var(--surface);border:1px solid var(--border);border-radius:10px;">
+    <p style="font-size:11px;letter-spacing:0.2em;color:var(--dim);margin-bottom:16px;text-transform:uppercase;">// Philosophy</p>
+    <p style="font-size:13px;color:var(--muted);line-height:1.8;">
+      <span style="color:var(--accent);">Ship fast, iterate.</span> I believe in production-ready code over perfect prototypes. 
+      Every system should be <span style="color:var(--accent);">monitored</span>, <span style="color:var(--accent);">documented</span>, and built to <span style="color:var(--accent);">scale</span>. 
+      Manual tasks should be automated. Repeated work should be scripted.
+    </p>
   </div>
 </section>
 
